@@ -1,0 +1,31 @@
+.child {
+    width: 300px;
+    height: 300px;
+    background-color: aqua;
+    margin: 10px;
+    animation: fadeIn linear;
+    animation-timeline: view();
+    animation-range:  entry 10% cover 40%;
+    
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        clip-path: inset(100% 100% 0 0);
+    }
+
+    to {
+        opacity: 1;
+        clip-path: inset(0 0 0 0);
+
+    }
+}
+
+.parent {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
